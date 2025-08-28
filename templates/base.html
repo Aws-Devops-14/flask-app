@@ -1,26 +1,22 @@
 <html>
     <head>
         <title>
-            PythonLife
+            Python Life
         </title>
+        <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
     </head>
-    <link rel="stylesheet" href="{{url_for('static' filename='style.css')}}">
-    
+
     <body>
-        <form action="http://localhost:5000/login" method="post">
-            <table>
-                <tr>
-                    <td>Name</td>
-                    <td><input type="text" name="uname"></td>
-                </tr>
-                <tr>
-                    <td>Password</td>
-                    <td><input type="password" name="pass"></td>
-                </tr>
-                <tr>
-                    <td><input type="submit"></td>
-                </tr>
-            </table>
+        <form action="http://127.0.0.1:5000/usha" method="post">
+            <label for="Science">Science:</label>
+            <input type="text" id="Science" name="Science" value="0"><br>
+            <label for="Maths">Maths:</label> 
+            <input type="text" id="Maths" name="Maths" value="0"><br>
+            <label for="C">C:</label>
+            <input type="text" id="C" name="C" value="0"><br>
+            <label for="Data_Science">Data_Science:</label>
+            <input type="text" id="Data_Science" name="Data_Science" value="0"><br>
+            <input type="Submit" value="Submit">
         </form>
     </body>
 </html>

@@ -13,7 +13,7 @@ def student():
 @app.route("/staff")
 def staff():
     return "this is staff"
-
+#building URL dynamically#
 @app.route("/user/<name>")
 def user(name):
     if name == "admin":
